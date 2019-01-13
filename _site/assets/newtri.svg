@@ -1,0 +1,18 @@
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path id="a" d="M 0.868 40.354 L 12.416 7.643 L 23.994 7.643 L 29.771 24.014 L 35.559 7.642 L 47.132 7.641 L 35.555 40.355 L 23.999 40.359 L 18.202 24.026 L 12.436 40.35 L 0.868 40.354 Z" />
+    </defs>
+    <clipPath id="b">
+        <use xlink:href="#a" overflow="visible" />
+    </clipPath>
+    <path clip-path="url(#b)" fill="#3b27a0" d="M 0 23.95 H 48 V 48 H 0 V 23.95 Z" />
+    <path clip-path="url(#b)" fill="#472da8" d="M 0 24 L 24 24 L 24 48 L 0 48 L 0 24 Z" />
+    <path clip-path="url(#b)" fill="#472da8" d="M 0 0 H 48 V 24 H 0 V 0 Z" />
+    <path clip-path="url(#b)" fill="#3b27a0" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z" />
+    <path clip-path="url(#b)" fill="#ad1457" d="M 18.209 24 L 29.762 23.978 L 21.4 48 L 17.813 48 L 18.209 24 Z" />
+    <path clip-path="url(#b)" fill="#d81b60" d="M 26.6 0 L 29.272 0 L 29.775 24 L 18.199 24 L 26.6 0 Z" />
+    <path clip-path="url(#b)" fill="#5435b1" d="M 0 22.929 L 6.294 23.019 L 15.126 48 L 0 48 L 0 22.929 Z" />
+    <path clip-path="url(#b)" fill="#5435b1" d="M 32.868 0 L 47.945 0 L 48 28.549 L 42.977 28.625 L 32.868 0 Z" />
+    <path clip-path="url(#b)" fill="#271b92" d="M 21.317 48 L 29.782 24.02 L 38.245 48 L 21.317 48 Z" />
+    <path clip-path="url(#b)" fill="#271b92" d="M 9.706 0 L 26.713 0 L 18.2 24.02 L 9.706 0 Z" />
+</svg>
