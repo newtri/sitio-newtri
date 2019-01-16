@@ -1,6 +1,6 @@
 # sitio-newtri
 
-Repositorio del sitio newtri.cl 
+Repositorio del sitio newtri.cl
 
 Todos los derechos reservados © Quetru Ltda, 2019
 
