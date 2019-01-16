@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Organization" lang="es">
+
+<head>
+    <title>Newtri</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Aplicaciones para atención nutricional">
+    <meta itemprop="description" content="Aplicaciones para atención nutricional">
+    <meta name="keywords" content="ios, android, nutrición, nutricionista, newtri, newtricalc, app, aplicación">
+    <link rel="canonical" href="https://newtri.cl/">
+    <meta itemprop="image" content="./img/newtri.svg">
+    <link rel="publisher" href="https://plus.google.com/u/2/105066680280614577686">
+    <link rel="author" href="https://plus.google.com/u/2/105066680280614577686?rel=author">
+    <meta name="theme-color" content="#283593">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto+Mono:400,500,700">
+
+    <!-- Include Simpla, Netlify auth adapter, and cross-browser polyfill-->
+    <script src="https://unpkg.com/simpla@^3.0.0"></script>
+    <script src="https://unpkg.com/simpla@^3.0.0/adapters/netlify.js"></script>
+    <script src="https://unpkg.com/webcomponents.js@^0.7.24/webcomponents-lite.min.js" async></script>
+
+    <!-- Init Simpla -->
+    <script>
+      Simpla.init({
+
+        // The Github repo you want Simpla to use
+        repo: 'newtri/sitio-newtri',
+
+        // Netlify auth adapter, initialize with your Netlify site name
+        auth: new SimplaNetlify({ site: 'elegant-lumiere-83501b' }),
+
+        // Public content source (optional)
+        // Defaults to fetching directly from Github
+        source: 'window.location.origin'
+
+      });
+    </script>
+    <!-- Import Simpla elements -->
+    <link rel="import" href="/bower_components/simpla-text/simpla-text.html">
+    <link rel="import" href="/bower_components/simpla-img/simpla-img.html">
+    <link rel="import" href="/bower_components/simpla-admin/simpla-admin.html" async>
+</head>
+<body>
+    
+</body>
+</html>
