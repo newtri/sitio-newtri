@@ -17,6 +17,28 @@
     <link rel="stylesheet" href="./css/theme.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto+Mono:400,500,700">
+
+    <!-- Include Simpla, Netlify auth adapter, and cross-browser polyfill-->
+    <script src="https://unpkg.com/simpla@^3.0.0"></script>
+    <script src="https://unpkg.com/simpla@^3.0.0/adapters/netlify.js"></script>
+    <script src="https://unpkg.com/webcomponents.js@^0.7.24/webcomponents-lite.min.js" async></script>
+
+    <!-- Init Simpla -->
+    <script>
+      Simpla.init({
+
+        // The Github repo you want Simpla to use
+        repo: 'newtri/sitio-newtri',
+
+        // Netlify auth adapter, initialize with your Netlify site name
+        auth: new SimplaNetlify({ site: 'elegant-lumiere-83501b' }),
+
+        // Public content source (optional)
+        // Defaults to fetching directly from Github
+        source: 'https://newtri.cl'
+
+      });
+    </script>
 </head>
 
 <body>
