@@ -1,0 +1,9 @@
+{
+  "type": "Article",
+  "data": {
+    "value": "<p>test</p><p></p>"
+  },
+  "path": "/posts/",
+  "createdAt": "2019-01-16T21:27:31.318Z",
+  "updatedAt": "2019-01-16T21:27:47.479Z"
+}
