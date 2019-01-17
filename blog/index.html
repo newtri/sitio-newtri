@@ -20,8 +20,8 @@
     <!-- Include Simpla, Netlify auth adapter, and cross-browser polyfill-->
     <script src="https://unpkg.com/simpla@^3.0.0"></script>
     <script src="https://unpkg.com/simpla@^3.0.0/adapters/netlify.js"></script>
-    <script src="https://unpkg.com/webcomponents.js@^0.7.24/webcomponents-lite.min.js" async></script>
-    <!-- <script>
+    <!-- <script src="https://unpkg.com/webcomponents.js@^0.7.24/webcomponents-lite.min.js" async></script> -->
+    <script>
         (function() {
           if ('registerElement' in document
               && 'import' in document.createElement('link')
@@ -34,7 +34,7 @@
             document.body.appendChild(e);
           }
         })();  
-    </script> -->
+    </script>
 
     <!-- Init Simpla -->
     <script>
@@ -48,7 +48,7 @@
 
         // Public content source (optional)
         // Defaults to fetching directly from Github
-        //source: window.location.origin
+        // source: window.location.origin
 
     });
     </script>
@@ -73,8 +73,8 @@
         </nav>
     </header>
     <simpla-article id="post">
-        <simpla-text></simpla-text>
-        <simpla-img></simpla-img>
+<!--         <simpla-text></simpla-text>
+        <simpla-img></simpla-img> -->
     </simpla-article>
 
     <script>
