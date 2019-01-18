@@ -74,11 +74,16 @@
         </nav>
     </header>
     <div gid="blog">
-      <article id="post" sid="">
-        <h1><simpla-text sid="title"></simpla-text></h1>
-        <simpla-text sid="content"></simpla-text>
-      </article>
+      <simpla-article id="post" sid="" path="">
+      </simpla-article>
     </div>
+
+    <simpla-collection gid="blog" path="/blog">
+      <template>
+        <simpla-article id="post" sid="" path="/blog/[item]">
+        </simpla-article>
+      </template>
+    </simpla-collection>
 
     <script>
       var post = document.querySelector('#post'),
