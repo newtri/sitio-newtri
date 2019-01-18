@@ -76,7 +76,7 @@
     </header>
     <div class="contenido">
         <div gid="blog">
-            <article id="post" sid="">
+            <article id="post" sid="" path="">
               <h1><simpla-text sid="title"></simpla-text></h1>
               <simpla-markdown sid="content"></simpla-markdown>
             </article>
@@ -85,10 +85,10 @@
         <script>
           var post = document.querySelector('#post'),
               slug = window.location.pathname,
-              postSlug = slug.split('blog').pop();
+              postSlug = slug.split('blog/').pop();
 
-          post.setAttribute('sid', postSlug);
-          post.path = '/posts/' + postSlug;
+          // post.setAttribute('sid', postSlug);
+          post.path = postSlug;
         </script>
     </div>
     <footer id="footer">
