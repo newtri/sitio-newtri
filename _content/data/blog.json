@@ -1,16 +1,9 @@
 {
-  "type": "Collection",
+  "type": "Article",
   "data": {
-    "items": [
-      {
-        "id": "zogan"
-      },
-      {
-        "id": "r19w7"
-      }
-    ]
+    "value": "<p>test</p>"
   },
   "path": "/blog",
   "createdAt": "2019-01-18T00:31:50.905Z",
-  "updatedAt": "2019-01-18T00:33:29.602Z"
+  "updatedAt": "2019-01-18T00:33:44.931Z"
 }
