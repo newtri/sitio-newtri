@@ -22,20 +22,19 @@
     <script src="https://unpkg.com/simpla@^3.0.0/adapters/netlify.js"></script>
     <!-- <script src="https://unpkg.com/webcomponents.js@^0.7.24/webcomponents-lite.min.js" async></script> -->
     <script>
-        (function() {
-          if ('registerElement' in document
-              && 'import' in document.createElement('link')
-              && 'content' in document.createElement('template')) {
+    (function() {
+        if ('registerElement' in document &&
+            'import' in document.createElement('link') &&
+            'content' in document.createElement('template')) {
             // platform is good!
-          } else {
+        } else {
             // polyfill the platform!
             var e = document.createElement('script');
             e.src = './../bower_components/webcomponentsjs/webcomponents-lite.min.js';
             document.body.appendChild(e);
-          }
-        })();  
+        }
+    })();
     </script>
-
     <!-- Init Simpla -->
     <script>
     Simpla.init({
@@ -76,10 +75,10 @@
     </header>
     <div class="contenido">
         <simpla-collection sid="posts">
-          <template>
-            <simpla-article sid="[item]">
-            </div>
-          </simpla-article>
+            <template>
+                <simpla-article sid="[item]">
+                </simpla-article>
+            </template>
         </simpla-collection>
     </div>
     <footer id="footer">
