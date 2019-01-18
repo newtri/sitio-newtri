@@ -57,6 +57,7 @@
     <link rel="import" href="./../bower_components/simpla-paths/simpla-paths.html">
     <link rel="import" href="./../bower_components/simpla-text/simpla-text.html">
     <link rel="import" href="./../bower_components/simpla-img/simpla-img.html">
+    <link rel="import" href="/bower_components/simpla-collection/simpla-collection.html">
     <link rel="import" href="./../bower_components/simpla-admin/simpla-admin.html" async>
 </head>
 
@@ -73,11 +74,11 @@
                 </a>
         </nav>
     </header>
-    <div gid="blog">
+<!--     <div gid="blog">
       <simpla-article id="post" sid="" path="">
       </simpla-article>
     </div>
-
+ -->
     <simpla-collection gid="blog" path="/blog">
       <template>
         <simpla-article id="post" sid="" path="/blog/[item]">
