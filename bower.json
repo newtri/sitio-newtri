@@ -20,6 +20,7 @@
     "simpla-text": "^1.2.2",
     "simpla-article": "^1.1.1",
     "simpla-paths": "^1.0.2",
-    "simpla-collection": "^1.1.2"
+    "simpla-collection": "^1.1.2",
+    "simpla-markdown": "SimplaElements/simpla-markdown#^0.4.8"
   }
 }

@@ -56,6 +56,7 @@
     <link rel="import" href="./../bower_components/simpla-paths/simpla-paths.html">
     <link rel="import" href="./../bower_components/simpla-text/simpla-text.html">
     <link rel="import" href="./../bower_components/simpla-img/simpla-img.html">
+    <link rel="import" href="./../bower_components/simpla-markdown/simpla-markdown.html">
     <link rel="import" href="./../bower_components/simpla-collection/simpla-collection.html">
     <link rel="import" href="./../bower_components/simpla-admin/simpla-admin.html" async>
 </head>
@@ -74,12 +75,19 @@
         </nav>
     </header>
     <div class="contenido">
-        <simpla-collection sid="posts">
-            <template>
-                <simpla-article sid="[item]">
-                </simpla-article>
-            </template>
-        </simpla-collection>
+        <div gid="blog">
+            <article id="post" sid="">
+              <h1><simpla-text sid="title"></simpla-text></h1>
+              <simpla-markdown sid="content"></simpla-markdown>
+            </article>
+        </div>
+
+        <script>
+          var post = document.querySelector('#post'),
+              postSlug = window.location.split('blog').pop();
+
+          post.setAttribute('sid', postSlug);
+        </script>
     </div>
     <footer id="footer">
         <div class="wrapper">
