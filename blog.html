@@ -52,6 +52,13 @@
 
     });
     </script>
+    <script>
+    var post = document.querySelector('#post'),
+        slug = window.location.pathname,
+        postSlug = slug.split('blog/').pop();
+
+    post.setAttribute('sid', postSlug);
+    </script>
     <!-- Import Simpla elements -->
     <link rel="import" href="./bower_components/simpla-article/simpla-article.html">
     <!-- <link rel="import" href="./bower_components/simpla-paths/simpla-paths.html"> -->
@@ -76,18 +83,10 @@
         </nav>
     </header>
     <div class="contenido">
-        <article id="post" sid="" path="">
+        <article id="post" sid="">
             <h1><simpla-text sid="title"></simpla-text></h1>
             <simpla-markdown sid="content"></simpla-markdown>
         </article>
-        <script>
-        var post = document.querySelector('#post'),
-            slug = window.location.pathname,
-            postSlug = slug.split('blog/').pop();
-
-        // post.setAttribute('sid', postSlug);
-        post.path = postSlug;
-        </script>
     </div>
     <footer id="footer">
         <div class="wrapper">
