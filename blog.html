@@ -43,11 +43,11 @@
         repo: 'newtri/sitio-newtri',
 
         // Netlify auth adapter, initialize with your Netlify site name
-        auth: new SimplaNetlify({ site: 'newtri' })
+        auth: new SimplaNetlify({ site: 'newtri' }),
 
         // Public content source (optional)
         // Defaults to fetching directly from Github
-        // source: window.location.origin
+        source: window.location.origin
 
     });
     </script>
@@ -75,21 +75,23 @@
         </nav>
     </header>
     <div class="contenido">
-        <div gid="blog">
-            <article id="post" sid="" path="">
-              <h1><simpla-text sid="title"></simpla-text></h1>
-              <simpla-markdown sid="content"></simpla-markdown>
-            </article>
-        </div>
-
+        <article id="post" sid="" path="">
+            <h1><simpla-text sid="title"></simpla-text></h1>
+            <simpla-markdown sid="content"></simpla-markdown>
+        </article>
         <script>
-          var post = document.querySelector('#post'),
-              slug = window.location.pathname,
-              postSlug = slug.split('blog/').pop();
+        var post = document.querySelector('#post'),
+            slug = window.location.pathname,
+            postSlug = slug.split('blog/').pop();
 
-          // post.setAttribute('sid', postSlug);
-          post.path = postSlug;
+        // post.setAttribute('sid', postSlug);
+        post.path = postSlug;
         </script>
+    </div>
+    <div id="page" sid="page">
+      <div sid="section">
+        <simpla-text sid="title"></simpla-text>
+      </div>
     </div>
     <footer id="footer">
         <div class="wrapper">
