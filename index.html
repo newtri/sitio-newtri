@@ -17,6 +17,49 @@
     <link rel="stylesheet" href="./css/theme.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto+Mono:400,500,700">
+
+    <!-- Include Simpla, Netlify auth adapter, and cross-browser polyfill-->
+    <script src="https://unpkg.com/simpla@^3.0.0"></script>
+    <script src="https://unpkg.com/simpla@^3.0.0/adapters/netlify.js"></script>
+    <!-- <script src="https://unpkg.com/webcomponents.js@^0.7.24/webcomponents-lite.min.js" async></script> -->
+    <script>
+    (function() {
+        if ('registerElement' in document &&
+            'import' in document.createElement('link') &&
+            'content' in document.createElement('template')) {
+            // platform is good!
+        } else {
+            // polyfill the platform!
+            var e = document.createElement('script');
+            e.src = './bower_components/webcomponentsjs/webcomponents-lite.min.js';
+            document.body.appendChild(e);
+        }
+    })();
+    </script>
+    <!-- Init Simpla -->
+    <script>
+    Simpla.init({
+
+        // The Github repo you want Simpla to use
+        repo: 'newtri/sitio-newtri',
+
+        // Netlify auth adapter, initialize with your Netlify site name
+        auth: new SimplaNetlify({ site: 'newtri' })
+
+        // Public content source (optional)
+        // Defaults to fetching directly from Github
+        // source: window.location.origin
+
+    });
+    </script>
+    <!-- Import Simpla elements -->
+    <link rel="import" href="./bower_components/simpla-article/simpla-article.html">
+    <link rel="import" href="./bower_components/simpla-paths/simpla-paths.html">
+    <link rel="import" href="./bower_components/simpla-text/simpla-text.html">
+    <link rel="import" href="./bower_components/simpla-img/simpla-img.html">
+    <link rel="import" href="./bower_components/simpla-markdown/simpla-markdown.html">
+    <link rel="import" href="./bower_components/simpla-collection/simpla-collection.html">
+    <link rel="import" href="./bower_components/simpla-admin/simpla-admin.html" async>
 </head>
 
 <body>
@@ -238,6 +281,21 @@
             </div>
         </div>
     </footer>
+    <div gid="blog">
+        <article id="post" sid="" path="">
+          <h1><simpla-text sid="title"></simpla-text></h1>
+          <simpla-markdown sid="content"></simpla-markdown>
+        </article>
+    </div>
+
+    <script>
+      var post = document.querySelector('#post'),
+          slug = window.location.pathname,
+          postSlug = slug.split('blog/').pop();
+
+      // post.setAttribute('sid', postSlug);
+      post.path = postSlug;
+    </script>
     <script>
     detalles = function() {
         document.getElementById('section-why').scrollIntoView({ block: "start", behavior: "smooth" });
