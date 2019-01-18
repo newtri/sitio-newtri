@@ -20,6 +20,7 @@
     <!-- Include Simpla, Netlify auth adapter, and cross-browser polyfill-->
     <script src="https://unpkg.com/simpla@^3.0.0"></script>
     <script src="https://unpkg.com/simpla@^3.0.0/adapters/netlify.js"></script>
+    <script src="https://unpkg.com/simpla-paths@^1.0.0"></script>
     <!-- <script src="https://unpkg.com/webcomponents.js@^0.7.24/webcomponents-lite.min.js" async></script> -->
     <script>
     (function() {
@@ -53,7 +54,7 @@
     </script>
     <!-- Import Simpla elements -->
     <link rel="import" href="./bower_components/simpla-article/simpla-article.html">
-    <link rel="import" href="./bower_components/simpla-paths/simpla-paths.html">
+    <!-- <link rel="import" href="./bower_components/simpla-paths/simpla-paths.html"> -->
     <link rel="import" href="./bower_components/simpla-text/simpla-text.html">
     <link rel="import" href="./bower_components/simpla-img/simpla-img.html">
     <link rel="import" href="./bower_components/simpla-markdown/simpla-markdown.html">
@@ -87,11 +88,6 @@
         // post.setAttribute('sid', postSlug);
         post.path = postSlug;
         </script>
-    </div>
-    <div id="page" sid="page">
-      <div sid="section">
-        <simpla-text sid="title"></simpla-text>
-      </div>
     </div>
     <footer id="footer">
         <div class="wrapper">
