@@ -84,7 +84,7 @@
 
         <script>
           var post = document.querySelector('#post'),
-              slug = window.location,
+              slug = window.location.pathname,
               postSlug = slug.split('blog').pop();
 
           post.setAttribute('sid', postSlug);
