@@ -54,6 +54,7 @@
     </script>
     <!-- Import Simpla elements -->
     <link rel="import" href="./../bower_components/simpla-article/simpla-article.html">
+    <link rel="import" href="./../bower_components/simpla-paths/simpla-paths.html">
     <link rel="import" href="./../bower_components/simpla-text/simpla-text.html">
     <link rel="import" href="./../bower_components/simpla-img/simpla-img.html">
     <link rel="import" href="./../bower_components/simpla-admin/simpla-admin.html" async>
@@ -72,9 +73,20 @@
                 </a>
         </nav>
     </header>
-    <simpla-article id="post">
-<!--         <simpla-text></simpla-text>
-        <simpla-img></simpla-img> -->
+    <div gid="blog">
+      <article id="post" sid="">
+        <h1><simpla-text sid="title"></simpla-text></h1>
+        <simpla-text sid="content"></simpla-text>
+      </article>
+    </div>
+
+    <script>
+      var post = document.querySelector('#post'),
+          postSlug = window.location.split('blog').pop();
+
+      post.setAttribute('sid', postSlug);
+    </script>
+<!--     <simpla-article id="post">
     </simpla-article>
 
     <script>
@@ -85,7 +97,7 @@
 
       // Set post path to fetch/create post
       post.path = '/posts/' + slug;
-    </script>
+    </script> -->
     <footer id="footer">
         <div class="wrapper">
             <div class="social-links">
