@@ -57,7 +57,7 @@
     <link rel="import" href="./../bower_components/simpla-paths/simpla-paths.html">
     <link rel="import" href="./../bower_components/simpla-text/simpla-text.html">
     <link rel="import" href="./../bower_components/simpla-img/simpla-img.html">
-    <link rel="import" href="/bower_components/simpla-collection/simpla-collection.html">
+    <link rel="import" href="./../bower_components/simpla-collection/simpla-collection.html">
     <link rel="import" href="./../bower_components/simpla-admin/simpla-admin.html" async>
 </head>
 
@@ -74,37 +74,14 @@
                 </a>
         </nav>
     </header>
-<!--     <div gid="blog">
-      <simpla-article id="post" sid="" path="">
-      </simpla-article>
+    <div class="contenido">
+        <simpla-collection sid="posts">
+          <template>
+            <simpla-article sid="[item]">
+            </div>
+          </simpla-article>
+        </simpla-collection>
     </div>
- -->
-    <simpla-collection gid="blog" path="/blog">
-      <template>
-        <simpla-article id="post" sid="" path="/blog/[item]">
-        </simpla-article>
-      </template>
-    </simpla-collection>
-
-    <script>
-      var post = document.querySelector('#post'),
-          slug = window.location.pathname,
-          postSlug = slug.split('blog').pop();
-
-      post.setAttribute('sid', postSlug);
-    </script>
-<!--     <simpla-article id="post">
-    </simpla-article>
-
-    <script>
-      // Get post slug from URL
-      var post = document.querySelector('#post'),
-          path = window.location.pathname,
-          slug = path.split('blog/').pop();
-
-      // Set post path to fetch/create post
-      post.path = '/posts/' + slug;
-    </script> -->
     <footer id="footer">
         <div class="wrapper">
             <div class="social-links">

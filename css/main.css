@@ -404,6 +404,9 @@ article {
 .prev {
   order: 1
 }
+.contenido {
+  min-height: 50vh;
+}
 
 /* Footer */
 footer {
